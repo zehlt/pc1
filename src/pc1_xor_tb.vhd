@@ -18,7 +18,6 @@ architecture pc1_xor_tb_arch of pc1_xor_tb is
     end component;
 
 begin
-
     dut: pc1_xor port map (
         a => a_tb,
         b => b_tb,
@@ -29,6 +28,7 @@ begin
     begin
         a_tb <= '0'; b_tb <= '0'; wait for 5 ns;
         assert output_tb = '0';
+        -- report ...  
 
         a_tb <= '1'; b_tb <= '0'; wait for 5 ns;
         assert output_tb = '1';
