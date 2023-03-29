@@ -11,9 +11,7 @@ entity pc1_mux is
 end entity;
 
 architecture pc1_mux_arch of pc1_mux is
-
     signal not_to_and_a: std_logic;
-
     signal a_to_or: std_logic;
     signal b_to_or: std_logic;
 
